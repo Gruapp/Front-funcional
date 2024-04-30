@@ -1,0 +1,121 @@
+.contenedor-mapa {
+  height: 400px;
+  width: 100%;
+}
+
+.contenedor {
+  position: relative;
+  margin-top: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: black 2px solid;
+  overflow: hidden;
+  animation: borderEffect 5s infinite;
+}
+
+@keyframes borderEffect {
+  0% {
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+  }
+  25% {
+    border-color: red;
+    box-shadow: 0 0 10px rgba(218, 25, 25);
+  }
+  50% {
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+  }
+  75% {
+    border-color: red;
+    box-shadow: 0 0 10px rgba(218, 25, 25);
+  }
+  100% {
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+  }
+}
+
+.barra-lateral {
+  background-color: rgb(35 55 75 / 90%);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.iconoUsuario {
+  width: 25px;
+  height: 25px;
+  color: royalblue;
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  z-index: 1;
+}
+
+.popup img {
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.popup h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.popup p {
+  margin: 0;
+  padding: 0;
+}
+
+.popup p:last-child {
+  font-weight: bold;
+  font-size: 10px;
+  color: royalblue;
+}
+
+.popup .online {
+  color: green;
+}
+
+.popup .offline {
+  color: red;
+}
+
+.contactar-btn {
+  background-color: #1bd741;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.popup img.logoWhatsapp {
+  width: 12%;
+  height: auto;
+}

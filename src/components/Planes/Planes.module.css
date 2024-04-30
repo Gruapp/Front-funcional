@@ -1,0 +1,288 @@
+footer {
+  margin-top: 0 !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.contenedor {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.contenedorPrecios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #111827;
+}
+
+.contenedorPreciosSecundario {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 80rem;
+}
+
+.contenedorIntroduccion {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorIntroduccion h1 {
+  max-width: 56rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contenedorIntroduccion p {
+  margin-top: 1rem;
+  max-width: 42rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 2rem;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.contenedorTarjetas {
+  display: grid;
+  position: relative;
+  margin-top: 2.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 2rem;
+  max-width: 28rem;
+}
+
+.divisor {
+  display: none;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.contenedorTarjetaPlan {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.contenedorTarjetaPlanPrincipal {
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1px solid rgba(26, 32, 44, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedorTarjetaPlanPrincipal:hover {
+  transform: scale(1.1);
+}
+
+.contenedorTarjetaPlanSecundario {
+  background-color: rgba(26, 32, 44, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0;
+}
+
+.tarjetaPlan {
+  padding: 2rem;
+}
+
+.tarjetaPlan h2 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.tarjetaPlanTituloPrincipal {
+  color: #111827;
+}
+
+.tarjetaPlanTituloSecundario {
+  color: white;
+}
+
+.tarjetaPlanPrecioContenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tarjetaPlanPrecioContenedor2 {
+  display: flex;
+  margin-top: 0.5rem;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.precio {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.contenedorMoneda {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.linkCompra {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.linkCompraPrincipal {
+  background-color: #4f46e5;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.linkCompraPrincipal:hover {
+  background-color: #6366f1;
+}
+
+.linkCompraSecundario {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.linkCompraSecundario:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contenedorCaracteristicas {
+  display: flow-root;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.listaCaracteristicas {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+  border-top-width: 1px;
+  border-top-width: 1px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.listaCaracteristicasPrincipal {
+  color: rgba(75, 85, 99, 0.5);
+  border-color: rgba(17, 24, 39, 0.5);
+}
+
+.listaCaracteristicasSecundario {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.caracteristica {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
+  column-gap: 0.75rem;
+}
+
+.iconoCaracteristica {
+  flex: none;
+  width: 1.25rem;
+  height: 1.5rem;
+}
+
+.iconoCaracteristicaPrincipal {
+  color: #4f46e5;
+}
+
+.iconoCaracteristicaSecundario {
+  color: #6b7280;
+}
+
+@media (min-width: 640px) {
+  .contenedorPrecios {
+    padding-top: 8rem;
+  }
+
+  .tarjetaPlanPrecioContenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .contenedorCaracteristicas {
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedorPrecios {
+    padding-bottom: 0;
+  }
+  .contenedorPreciosSecundario {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .contenedorTarjetas {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -3.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: none;
+  }
+  .divisor {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: var(--tw-ring-inset) 0 0 0
+      calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  }
+
+  .tarjetaPlan {
+    padding-top: 3rem;
+  }
+
+  .tarjetaPlanPrecioContenedor {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1280px) {
+  .tarjetaPlan {
+    padding: 2.5rem;
+    padding-top: 3.5rem;
+  }
+}

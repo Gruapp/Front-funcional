@@ -1,0 +1,345 @@
+.mainClass {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  column-gap: 4rem;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.textWhite {
+  color: #ffffff;
+}
+
+.textBase {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.contenedorPrincipal {
+  background-color: white;
+  margin-top: 5rem;
+}
+
+.seccionDerecha {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  color: #727ba8;
+  background-color: #0c0c19;
+}
+
+.contenedorSeccionDerecha {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloDerecha {
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.precioDerecha {
+  margin-top: 0.75rem;
+  font-size: 1.475rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.listaDerecha {
+  border-top-width: 1px;
+  border-color: #ffffff;
+  --divide-opacity: 0.1;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.listaItemDerecha {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 1rem;
+  align-items: flex-start;
+}
+
+.listaItemDerechaPrecio {
+  flex: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.iconoDerecha {
+  object-fit: cover;
+  object-position: center;
+  flex: none;
+  border-radius: 0.375rem;
+  width: 5rem;
+  height: 5rem;
+  color: #681fa4;
+  margin-right: 20px;
+}
+
+.contenedorInfoDerecha {
+  margin-top: 0.25rem;
+  flex: 1 1 auto;
+}
+
+.contenedorTotal {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top-width: 1px;
+  border-color: rgb(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.contenedorTotal div {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-top-width: 1px;
+  border-color: rgb(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.seccionFormulario {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contenedorFormulario {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedorInputs {
+  display: grid;
+  margin-top: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+}
+
+.contenedorNumeroTarjeta {
+  grid-column: span 3 / span 3;
+}
+
+.contenedorNumeroTarjeta label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.contenedorNumeroTarjeta input {
+  display: block;
+  border-radius: 0.375rem;
+  border-color: #d1d5db;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.contenedorFecha {
+  grid-column: span 2 / span 2;
+}
+
+.contenedorFecha label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.contenedorFecha input {
+  display: block;
+  border-radius: 0.375rem;
+  border-color: #d1d5db;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.labelCVC {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.inputCVC {
+  display: block;
+  border-radius: 0.375rem;
+  border-color: #d1d5db;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.contenedorBoton {
+  display: flex;
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+  justify-content: flex-end;
+  border-top-width: 1px;
+  border-color: #e5e7eb;
+}
+
+.contenedorBoton button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0c0c19;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.contenedorBoton button:hover {
+  background-color: #1f1f32;
+}
+
+.mitadIzquierda {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.mitadDerecha {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #0c0c19;
+}
+
+@media (min-width: 640px) {
+  .contenedorInputs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .contenedorNumeroTarjeta {
+    grid-column: span 4 / span 4;
+  }
+
+  .contenedorNumeroTarjeta input {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .contenedorFecha {
+    grid-column: span 3 / span 3;
+  }
+
+  .contenedorFecha input {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .inputCVC {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .seccionDerecha {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainClass {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seccionDerecha {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 6rem;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .contenedorSeccionDerecha {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .seccionFormulario {
+    padding-top: 0;
+    padding-bottom: 6rem;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100%;
+  }
+
+  .contenedorFormulario {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mitadIzquierda {
+    display: block;
+  }
+
+  .mitadDerecha {
+    display: block;
+  }
+}
